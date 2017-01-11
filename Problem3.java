@@ -1,21 +1,25 @@
+import java.util.Scanner;
 
 public class Problem3 {
-
-	public static void main (String[] args) {
-		int i = 2522;
-		for (i = 2522; i <=  2432902008176640000L; i+=2) {
-			int check = 0;
-			for (int j = 2; j <= 20; j++) {
-				
-				if (i%j != 0) {
-					check = 1;
-					break;
-				}
-			}
-			
-			if (check == 0)
-				break;	
+	
+	public static void main (String[] args) { 
+	long i = 8462696833L;
+	long largest = i;
+	
+	while (i <= 8462696833L) {
+		
+		
+		if (i%3 != 0 && i%2 != 0 && i%5 !=0 && 600851475143L%i == 0) {
+			largest = i;
+			break;
 		}
-		System.out.printf("%d ", i);		
-	}	
+		
+		i--;
+		
+		
+	}
+	
+	System.out.printf("%d ", largest);
+		 
+}
 }
