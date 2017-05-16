@@ -7,5 +7,3 @@ for coin in coins:
         combos[i] += combos[i-coin]
 
 print(combos[goal])
-for i in range(0, len(combos)):
-    print(str(i) + " " + str(combos[i]))
